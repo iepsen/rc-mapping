@@ -4,4 +4,5 @@ import numbers from './numbers'
 
 const exit = () => window.close()
 
+export default { colors, navigation, numbers, exit }
 export { colors, navigation, numbers, exit }
