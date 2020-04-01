@@ -1,11 +1,21 @@
-# `computer`
+# Remote Control Mappig for Computer keyboard
+Computer key binding. Currently supports navigation (arrows, enter and esc), numeric and color keys.
 
-> TODO: description
+## Install
+```shell
+npm install @rc-mapping/computer
+```
 
 ## Usage
 
-```
-const computer = require('computer');
+Ecmascript 6 syntax:
+```js
+import { navigation } from  @rc-mapping/computer;
 
-// TODO: DEMONSTRATE API
+const onKeyDown = event => {
+  if (event.keyCode === navigation.keyEnter) {
+    // your code
+  }
+}
+document.addEventListener('keydown', onKeyDown)
 ```
