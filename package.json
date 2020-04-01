@@ -1,11 +1,4 @@
 {
-  "name": "rc-mapping",
-  "version": "1.0.0",
-  "description": "Remote Control Mapping is a bind package to support applications for remote control based platforms.",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iepsen/rc-mapping.git"
@@ -18,9 +11,7 @@
   },
   "homepage": "https://github.com/iepsen/rc-mapping#readme",
   "devDependencies": {
+    "lerna": "^3.20.2",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "tsc": "^1.20150623.0"
   }
 }
