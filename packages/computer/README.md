@@ -7,8 +7,6 @@ npm install @rc-mapping/computer
 ```
 
 ## Usage
-
-Ecmascript 6 syntax:
 ```js
 import { navigation } from  @rc-mapping/computer;
 

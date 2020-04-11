@@ -1,26 +1,42 @@
 {
-  "name": "@rc-mapping/computer",
-  "version": "0.0.1",
-  "description": "RC Mapping for Computer",
-  "author": "Marcelo Iepsen <iepsen@gmail.com>",
-  "homepage": "https://github.com/iepsen/rc-mapping/tree/master/packages/computer#readme",
-  "license": "ISC",
+	"name": "@rc-mapping/computer",
+	"version": "0.0.1",
+	"description": "RC Mapping for Computer",
+	"author": "Marcelo Iepsen <iepsen@gmail.com>",
+	"homepage": "https://github.com/iepsen/rc-mapping/tree/master/packages/computer#readme",
+	"license": "ISC",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iepsen/rc-mapping.git"
-  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "mocha -r jsdom-global/register -r ts-node/register __tests__/**/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
-  "bugs": {
-    "url": "https://github.com/iepsen/rc-mapping/issues"
-  }
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iepsen/rc-mapping.git"
+	},
+	"bugs": {
+		"url": "https://github.com/iepsen/rc-mapping/issues"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.2.11",
+		"@types/mocha": "^7.0.2",
+		"@types/sinon-chai": "^3.2.4",
+		"assert": "^2.0.0",
+		"chai": "^4.2.0",
+		"jsdom": "^16.2.2",
+		"jsdom-global": "^3.0.2",
+		"mocha": "^7.1.1",
+		"nyc": "^15.0.0",
+    "sinon-chai": "^3.5.0",
+		"ts-node": "^8.8.1",
+		"typescript": "^3.8.3"
+	}
 }
